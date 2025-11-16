@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2025 denz87
+Copyright (c) 2025 FADESoft
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,3 +19,34 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+---
+
+## 🎮 ROMS OPTIMIZER v0.8.1 - Additional Terms
+
+### Uso del Software
+Questo software è progettato per organizzare collezioni PERSONALI di ROM e 
+file di gioco. L'utente è responsabile di assicurarsi di possedere 
+legalmente tutte le ROM utilizzate con questo software.
+
+### Esclusione di Responsabilità
+- FADESoft non si assume alcuna responsabilità per l'uso improprio del software
+- Il software è fornito "così com'è" senza garanzie di alcun tipo
+- L'utente utilizza il software a proprio rischio e responsabilità
+- Nessun file viene mai eliminato definitivamente (i duplicati vengono spostati)
+
+### Database e Contenuti di Terze Parti
+- I database DAT MAME utilizzati sono proprietà dei rispettivi autori
+- Le traduzioni sono state create dalla comunità e/o tramite strumenti automatici
+- I loghi e le icone sono proprietà di FADESoft o utilizzati sotto licenze appropriate
+
+### Contributi
+I contributi al progetto sono benvenuti e saranno considerati sotto la stessa licenza MIT.
+
+### Contatti
+Per questioni relative alla licenza, contattare FADESoft tramite GitHub Issues.
+
+---
+
+**Sviluppato da FADESoft - Novembre 2025**
+**Advanced ROM Management & Optimization Tool**
