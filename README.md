@@ -198,8 +198,14 @@ Questo progetto è distribuito sotto **Licenza MIT**. Vedi il file `LICENSE` per
 
 - **Comunità MAME** per i database DAT
 - **Emulation communities** per i standard di naming delle ROM
-- **Beta testers** per feedback e segnalazioni
-- **Traduttori** per il supporto multi-lingua
+
+---
+
+##  DOWNLOAD ed USO
+
+- Per chi non volesse cimentarsi nella compilaizone del programma,
+  nella cartella /dist/ è gia presente la versione compilata .exe
+  pronta all'uso.
 
 ---
 
