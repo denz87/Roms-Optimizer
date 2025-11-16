@@ -1,0 +1,136 @@
+🎮 ROMS OPTIMIZER v0.8.1 - Tam Rehber
+
+═══════════════════════════════════════════════════════════════════
+
+📖 GENEL BAKIŞ
+ROM Cleaner, ROM koleksiyonlarını yönetmek ve temizlemek için gelişmiş bir araçtır.
+Program otomatik olarak kopyaları tanımlar ve akıllı kalite kriterleri ve
+coğrafi önceliklere dayalı olarak yalnızca en iyi sürümleri tutar.
+
+═══════════════════════════════════════════════════════════════════
+
+🔧 ANA ÖZELLİKLER
+
+📂 Klasör Seçimi
+   • ROM'ları içeren ana klasörü seçin
+   • Program tüm alt klasörleri özyinelemeli olarak tarar
+   • Tüm yaygın ROM formatlarını destekler
+
+⚙️ Temizleme Seçenekleri
+   • Test Modu: Dosyaları değiştirmeden temizleme simülasyonu yapar
+   • Tutulan Dosyaları Göster: Tutulacak dosyaları da gösterir
+   • Taşımak Yerine Kopyala: Orijinal dosyaları tutar ve kopyalar oluşturur
+
+🌍 Coğrafi Öncelik
+   • Avrupa: İtalyan, Avrupa ve PAL sürümlerine öncelik verir
+   • ABD: Amerikan ve NTSC sürümlerine öncelik verir
+   • Japonya: Japon ve Asya sürümlerine öncelik verir
+
+═══════════════════════════════════════════════════════════════════
+
+🏆 ÖNCELİK SİSTEMİ
+
+Program her ROM'un en iyi sürümünü belirlemek için
+gelişmiş bir puanlama sistemi kullanır:
+
+📍 Coğrafi Öncelik (taban):
+   • Coğrafi etiketleri olmayan dosyalar: Maksimum öncelik
+   • İtalya/İtalyanca: 1000 puan
+   • Avrupa/PAL: 900 puan
+   • ABD/NTSC: 750 puan
+   • İngiltere/İngilizce: 700 puan
+   • Japonya: 500 puan
+
+✨ Kalite Etiketleri:
+   • Etiket yok []: +15000 puan (orijinal dosyalar)
+   • [!] Doğrulanmış İyi: +9000 puan
+   • [f] Düzeltilmiş: +7000 puan
+   • [a] Alternatif: +6000 puan
+   • [T] Çeviri: +3000 puan
+   • [h] Hack'lenmiş: +1000 puan
+   • [b] Kötü Dump: -5000 puan
+   • [x] Kötü Sağlama Toplamı: -10000 puan
+
+═══════════════════════════════════════════════════════════════════
+
+📋 TEMİZLEME SÜRECİ
+
+1️⃣ Tarama
+   • Program seçilen klasördeki tüm ROM dosyalarını analiz eder
+   • Oyun adına dayalı olarak kopyaları tanımlar
+   • Her sürüm için öncelik puanını hesaplar
+
+2️⃣ Analiz
+   • ROM'ları oyun adına göre gruplar
+   • Sürümleri öncelik puanına göre sıralar
+   • Her oyun için en iyi sürümü tanımlar
+
+3️⃣ Temizleme
+   • En yüksek puana sahip sürümü "cleaned" klasörüne taşır
+   • Ayrıca tüm tekil dosyaları (kopya yok) "cleaned" klasörüne taşır
+   • Alt/kopyalanmış sürümleri orijinal klasörde bırakır
+   • Ayrıntılı işlem günlüğü oluşturur
+
+═══════════════════════════════════════════════════════════════════
+
+📁 SONUÇ DOSYA YAPISI
+
+Temizlemeden sonra şunlara sahip olacaksınız:
+📂 Orijinal Klasör
+   ├── 📄 Kopyalanmış/alt sürümler (burada kalır)
+   └── 📁 cleaned/
+       └── 📄 Temiz koleksiyon: en iyi sürümler + tekil dosyalar (buraya taşındı)
+
+═══════════════════════════════════════════════════════════════════
+
+🎯 KULLANIM İPUÇLARI
+
+💡 İlk Kez:
+   • Ne olacağını görmek için her zaman "Test Modu"nu kullanın
+   • Programın seçimlerini doğrulamak için günlüğü kontrol edin
+   • Son temizlemeden önce koleksiyonunuzun yedeğini alın
+
+🔄 Coğrafi Modlar:
+   • İtalyan/Avrupa ROM'larını tercih ediyorsanız "Avrupa"yı seçin
+   • Çoğunlukla Amerikan koleksiyonları için "ABD"yi kullanın
+   • Orijinal Japon ROM'ları için "Japonya"yı kullanın
+
+📊 Günlük Yorumlama:
+   • ✨ TEKİL: "cleaned" klasörüne taşınacak benzersiz dosyalar
+   • 📦 EN İYİ: "cleaned"e taşınacak kopya gruplarından en iyi dosyalar
+   • 🔄 KALIR: Orijinal klasörde kalacak kopyalanmış/alt dosyalar
+   • ⚠️ ÇOK-DİSK: Birden fazla disk gerektiren oyunlar
+
+═══════════════════════════════════════════════════════════════════
+
+⚠️ ÖNEMLİ UYARILAR
+
+🔐 Güvenlik:
+   • Program dosyaları asla kalıcı olarak silmez
+   • Temiz koleksiyon "cleaned" klasöründe oluşturulur
+   • Orijinal dosyalar (kopyalar dahil) ana klasörde erişilebilir kalır
+   • Her zaman herhangi bir dosyayı kurtarabilirsiniz
+
+💿 Çok-Diskli Oyunlar:
+   • "Final Fantasy VII (Disk 1)" ve "Final Fantasy VII (Disk 2)" gibi oyunlar
+   • Her disk ayrı oyun olarak işlenir
+   • Tüm gerekli diskleri sakladığınızdan emin olun
+
+🎮 Desteklenen Formatlar:
+   • .zip, .7z, .rar (sıkıştırılmış arşivler)
+   • .iso, .bin, .img (disk görüntüleri)
+   • .rom, .smd, .smc (doğrudan ROM'lar)
+   • Ve diğer birçok yaygın format
+
+═══════════════════════════════════════════════════════════════════
+
+📞 DESTEK
+
+Sorunlar veya öneriler için:
+• İşlem ayrıntıları için her zaman günlüğü kontrol edin
+• Temizlemeden önce sonuçları doğrulamak için test modunu kullanın
+• Koleksiyonlarınızın düzenli yedeklerini alın
+
+Sürüm: ROM Cleaner 2.0
+Geliştirici: FADESoft
+Yıl: 2025

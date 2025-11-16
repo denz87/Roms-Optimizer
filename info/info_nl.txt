@@ -1,0 +1,136 @@
+🎮 ROMS OPTIMIZER v0.8.1 - Complete Gids
+
+═══════════════════════════════════════════════════════════════════
+
+📖 OVERZICHT
+ROM Cleaner is een geavanceerde tool voor het beheren en opschonen van ROM-collecties.
+Het programma identificeert automatisch duplicaten en behoudt alleen de beste versies
+gebaseerd op intelligente kwaliteitscriteria en geografische prioriteiten.
+
+═══════════════════════════════════════════════════════════════════
+
+🔧 HOOFDFUNCTIES
+
+📂 Map Selectie
+   • Selecteer de hoofdmap die ROM's bevat
+   • Het programma scant recursief alle submappen
+   • Ondersteunt alle gangbare ROM-formaten
+
+⚙️ Opschoon Opties
+   • Test Modus: Simuleert opschonen zonder bestanden te wijzigen
+   • Toon Behouden Bestanden: Toont ook bestanden die behouden worden
+   • Kopiëren in plaats van Verplaatsen: Behoudt originele bestanden en maakt kopieën
+
+🌍 Geografische Prioriteit
+   • Europa: Prioriteit aan Italiaanse, Europese en PAL versies
+   • VS: Prioriteit aan Amerikaanse en NTSC versies
+   • Japan: Prioriteit aan Japanse en Aziatische versies
+
+═══════════════════════════════════════════════════════════════════
+
+🏆 PRIORITEITSSYSTEEM
+
+Het programma gebruikt een geavanceerd scoresysteem om de beste
+versie van elke ROM te bepalen:
+
+📍 Geografische Prioriteit (basis):
+   • Bestanden zonder geografische tags: Maximale prioriteit
+   • Italië/Italiaans: 1000 punten
+   • Europa/PAL: 900 punten
+   • VS/NTSC: 750 punten
+   • VK/Engels: 700 punten
+   • Japan: 500 punten
+
+✨ Kwaliteit Tags:
+   • Geen tags []: +15000 punten (originele bestanden)
+   • [!] Geverifieerd Goed: +9000 punten
+   • [f] Gerepareerd: +7000 punten
+   • [a] Alternatief: +6000 punten
+   • [T] Vertaling: +3000 punten
+   • [h] Gehackt: +1000 punten
+   • [b] Slechte Dump: -5000 punten
+   • [x] Slechte Checksum: -10000 punten
+
+═══════════════════════════════════════════════════════════════════
+
+📋 OPSCHOONPROCES
+
+1️⃣ Scannen
+   • Het programma analyseert alle ROM-bestanden in de geselecteerde map
+   • Identificeert duplicaten gebaseerd op spelnaam
+   • Berekent prioriteitsscore voor elke versie
+
+2️⃣ Analyse
+   • Groepeert ROM's op spelnaam
+   • Sorteert versies op prioriteitsscore
+   • Identificeert de beste versie voor elk spel
+
+3️⃣ Opschonen
+   • Verplaatst de versie met hoogste score naar "cleaned" map
+   • Verplaatst ook alle unieke bestanden (geen duplicaten) naar "cleaned" map
+   • Laat inferieure/gedupliceerde versies in originele map
+   • Genereert gedetailleerd operatielog
+
+═══════════════════════════════════════════════════════════════════
+
+📁 RESULTERENDE BESTANDSSTRUCTUUR
+
+Na het opschonen heb je:
+📂 Originele Map
+   ├── 📄 Gedupliceerde/inferieure versies (blijven hier)
+   └── 📁 cleaned/
+       └── 📄 Schone collectie: beste versies + unieke bestanden (hierheen verplaatst)
+
+═══════════════════════════════════════════════════════════════════
+
+🎯 GEBRUIKSTIPS
+
+💡 Eerste Keer:
+   • Gebruik altijd "Test Modus" om te zien wat er zou gebeuren
+   • Controleer het log om de keuzes van het programma te verifiëren
+   • Maak een backup van je collectie voor de definitieve opschoning
+
+🔄 Geografische Modi:
+   • Kies "Europa" als je Italiaanse/Europese ROM's prefereert
+   • Gebruik "VS" voor voornamelijk Amerikaanse collecties
+   • "Japan" voor originele Japanse ROM's
+
+📊 Log Interpretatie:
+   • ✨ UNIEK: Unieke bestanden die naar "cleaned" map worden verplaatst
+   • 📦 BESTE: Beste bestanden uit duplicaatgroepen die naar "cleaned" worden verplaatst
+   • 🔄 BLIJFT: Gedupliceerde/inferieure bestanden die in originele map blijven
+   • ⚠️ MULTI-DISC: Spellen die meerdere schijven vereisen
+
+═══════════════════════════════════════════════════════════════════
+
+⚠️ BELANGRIJKE WAARSCHUWINGEN
+
+🔐 Veiligheid:
+   • Het programma verwijdert nooit permanent bestanden
+   • De schone collectie wordt gemaakt in "cleaned" map
+   • Originele bestanden (inclusief duplicaten) blijven toegankelijk in hoofdmap
+   • Je kunt altijd elk bestand herstellen
+
+💿 Multi-Disc Spellen:
+   • Spellen zoals "Final Fantasy VII (Disc 1)" en "Final Fantasy VII (Disc 2)"
+   • Elke schijf wordt behandeld als apart spel
+   • Zorg ervoor dat je alle benodigde schijven behoudt
+
+🎮 Ondersteunde Formaten:
+   • .zip, .7z, .rar (gecomprimeerde archieven)
+   • .iso, .bin, .img (schijfbeelden)
+   • .rom, .smd, .smc (directe ROM's)
+   • En vele andere gangbare formaten
+
+═══════════════════════════════════════════════════════════════════
+
+📞 ONDERSTEUNING
+
+Voor problemen of suggesties:
+• Controleer altijd het log voor operatiedetails
+• Gebruik test modus om resultaten te verifiëren voor opschoning
+• Maak regelmatig backups van je collecties
+
+Versie: ROM Cleaner 2.0
+Ontwikkeld door: FADESoft
+Jaar: 2025

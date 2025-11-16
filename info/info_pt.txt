@@ -1,0 +1,136 @@
+🎮 ROMS OPTIMIZER v0.8.1 - Guia Completo
+
+═══════════════════════════════════════════════════════════════════
+
+📖 VISÃO GERAL
+ROM Cleaner é uma ferramenta avançada para gerenciar e limpar coleções de ROM.
+O programa identifica automaticamente duplicatas e mantém apenas as melhores versões
+baseado em critérios de qualidade inteligentes e prioridades geográficas.
+
+═══════════════════════════════════════════════════════════════════
+
+🔧 FUNCIONALIDADES PRINCIPAIS
+
+📂 Seleção de Pasta
+   • Selecione a pasta principal contendo ROMs
+   • O programa varre recursivamente todas as subpastas
+   • Suporta todos os formatos de ROM comuns
+
+⚙️ Opções de Limpeza
+   • Modo Teste: Simula a limpeza sem modificar arquivos
+   • Mostrar Arquivos Mantidos: Também exibe arquivos que serão mantidos
+   • Copiar Em Vez de Mover: Mantém arquivos originais e cria cópias
+
+🌍 Prioridade Geográfica
+   • Europa: Prioriza versões Italianas, Europeias e PAL
+   • EUA: Prioriza versões Americanas e NTSC
+   • Japão: Prioriza versões Japonesas e Asiáticas
+
+═══════════════════════════════════════════════════════════════════
+
+🏆 SISTEMA DE PRIORIDADE
+
+O programa usa um sistema de pontuação avançado para determinar a melhor
+versão de cada ROM:
+
+📍 Prioridade Geográfica (base):
+   • Arquivos sem tags geográficas: Prioridade máxima
+   • Itália/Italiano: 1000 pontos
+   • Europa/PAL: 900 pontos
+   • EUA/NTSC: 750 pontos
+   • Reino Unido/Inglês: 700 pontos
+   • Japão: 500 pontos
+
+✨ Tags de Qualidade:
+   • Sem tags []: +15000 pontos (arquivos originais)
+   • [!] Verificado Bom: +9000 pontos
+   • [f] Corrigido: +7000 pontos
+   • [a] Alternativo: +6000 pontos
+   • [T] Tradução: +3000 pontos
+   • [h] Hackeado: +1000 pontos
+   • [b] Dump Ruim: -5000 pontos
+   • [x] Checksum Ruim: -10000 pontos
+
+═══════════════════════════════════════════════════════════════════
+
+📋 PROCESSO DE LIMPEZA
+
+1️⃣ Varredura
+   • O programa analisa todos os arquivos ROM na pasta selecionada
+   • Identifica duplicatas baseado no nome do jogo
+   • Calcula pontuação de prioridade para cada versão
+
+2️⃣ Análise
+   • Agrupa ROMs por nome do jogo
+   • Ordena versões por pontuação de prioridade
+   • Identifica a melhor versão para cada jogo
+
+3️⃣ Limpeza
+   • Move a versão com maior pontuação para pasta "cleaned"
+   • Também move todos os arquivos únicos (sem duplicatas) para pasta "cleaned"
+   • Deixa versões inferiores/duplicadas na pasta original
+   • Gera log detalhado da operação
+
+═══════════════════════════════════════════════════════════════════
+
+📁 ESTRUTURA DE ARQUIVOS RESULTANTE
+
+Após a limpeza você terá:
+📂 Pasta Original
+   ├── 📄 Versões duplicadas/inferiores (permanecem aqui)
+   └── 📁 cleaned/
+       └── 📄 Coleção limpa: melhores versões + arquivos únicos (movidos aqui)
+
+═══════════════════════════════════════════════════════════════════
+
+🎯 DICAS DE USO
+
+💡 Primeira Vez:
+   • Sempre use "Modo Teste" para ver o que aconteceria
+   • Verifique o log para verificar as escolhas do programa
+   • Faça backup da sua coleção antes da limpeza final
+
+🔄 Modos Geográficos:
+   • Escolha "Europa" se você prefere ROMs Italianas/Europeias
+   • Use "EUA" para coleções principalmente Americanas
+   • "Japão" para ROMs Japoneses originais
+
+📊 Interpretação do Log:
+   • ✨ ÚNICO: Arquivos únicos que serão movidos para pasta "cleaned"
+   • 📦 MELHOR: Melhores arquivos de grupos duplicados que serão movidos para "cleaned"
+   • 🔄 PERMANECE: Arquivos duplicados/inferiores que permanecerão na pasta original
+   • ⚠️ MULTI-DISCO: Jogos que requerem múltiplos discos
+
+═══════════════════════════════════════════════════════════════════
+
+⚠️ AVISOS IMPORTANTES
+
+🔐 Segurança:
+   • O programa nunca deleta permanentemente arquivos
+   • A coleção limpa é criada na pasta "cleaned"
+   • Arquivos originais (incluindo duplicatas) permanecem acessíveis na pasta principal
+   • Você sempre pode recuperar qualquer arquivo
+
+💿 Jogos Multi-Disco:
+   • Jogos como "Final Fantasy VII (Disco 1)" e "Final Fantasy VII (Disco 2)"
+   • Cada disco é tratado como jogo separado
+   • Certifique-se de manter todos os discos necessários
+
+🎮 Formatos Suportados:
+   • .zip, .7z, .rar (arquivos comprimidos)
+   • .iso, .bin, .img (imagens de disco)
+   • .rom, .smd, .smc (ROMs diretas)
+   • E muitos outros formatos comuns
+
+═══════════════════════════════════════════════════════════════════
+
+📞 SUPORTE
+
+Para problemas ou sugestões:
+• Sempre verifique o log para detalhes da operação
+• Use modo teste para verificar resultados antes da limpeza
+• Faça backups regulares das suas coleções
+
+Versão: ROM Cleaner 2.0
+Desenvolvido por: FADESoft
+Ano: 2025

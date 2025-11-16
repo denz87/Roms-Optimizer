@@ -1,0 +1,136 @@
+🎮 ROMS OPTIMIZER v0.8.1 - Kompletny Przewodnik
+
+═══════════════════════════════════════════════════════════════════
+
+📖 PREGLED
+ROM Cleaner je napredni alat za upravljanje i čišćenje ROM kolekcija.
+Program automatski identifikuje duplikate i zadržava samo najbolje verzije
+na osnovu inteligentnih kriterijuma kvaliteta i geografskih prioriteta.
+
+═══════════════════════════════════════════════════════════════════
+
+🔧 GLAVNE FUNKCIJE
+
+📂 Izbor Foldera
+   • Izaberite glavni folder koji sadrži ROM-ove
+   • Program rekurzivno skenira sve podfoldere
+   • Podržava sve uobičajene ROM formate
+
+⚙️ Opcije Čišćenja
+   • Test Režim: Simulira čišćenje bez menjanja fajlova
+   • Prikaži Zadržane Fajlove: Takođe prikazuje fajlove koji će biti zadržani
+   • Kopiraj Umesto Pomeranja: Zadržava originalne fajlove i pravi kopije
+
+🌍 Geografski Prioritet
+   • Evropa: Prioritet italijanskim, evropskim i PAL verzijama
+   • SAD: Prioritet američkim i NTSC verzijama
+   • Japan: Prioritet japanskim i azijskim verzijama
+
+═══════════════════════════════════════════════════════════════════
+
+🏆 SISTEM PRIORITETA
+
+Program koristi napredni sistem bodovanja za određivanje najbolje
+verzije svakog ROM-a:
+
+📍 Geografski Prioritet (osnova):
+   • Fajlovi bez geografskih oznaka: Maksimalni prioritet
+   • Italija/Italijanski: 1000 bodova
+   • Evropa/PAL: 900 bodova
+   • SAD/NTSC: 750 bodova
+   • UK/Engleski: 700 bodova
+   • Japan: 500 bodova
+
+✨ Oznake Kvaliteta:
+   • Bez oznaka []: +15000 bodova (originalni fajlovi)
+   • [!] Verifikovano Dobro: +9000 bodova
+   • [f] Popravljen: +7000 bodova
+   • [a] Alternativni: +6000 bodova
+   • [T] Prevod: +3000 bodova
+   • [h] Hakovan: +1000 bodova
+   • [b] Loš Dump: -5000 bodova
+   • [x] Loša Kontrolna Suma: -10000 bodova
+
+═══════════════════════════════════════════════════════════════════
+
+📋 PROCES ČIŠĆENJA
+
+1️⃣ Skeniranje
+   • Program analizira sve ROM fajlove u izabranom folderu
+   • Identifikuje duplikate na osnovu imena igre
+   • Računa rezultat prioriteta za svaku verziju
+
+2️⃣ Analiza
+   • Grupiše ROM-ove po imenu igre
+   • Sortira verzije po rezultatu prioriteta
+   • Identifikuje najbolju verziju za svaku igru
+
+3️⃣ Čišćenje
+   • Pomera verziju sa najvišim rezultatom u "cleaned" folder
+   • Takođe pomera sve pojedinačne fajlove (bez duplikata) u "cleaned" folder
+   • Ostavlja lošije/duplikovane verzije u originalnom folderu
+   • Generiše detaljan log operacije
+
+═══════════════════════════════════════════════════════════════════
+
+📁 REZULTUJUĆA STRUKTURA FAJLOVA
+
+Nakon čišćenja imaćete:
+📂 Originalni Folder
+   ├── 📄 Duplikovane/lošije verzije (ostaju ovde)
+   └── 📁 cleaned/
+       └── 📄 Čista kolekcija: najbolje verzije + pojedinačni fajlovi (pomereni ovde)
+
+═══════════════════════════════════════════════════════════════════
+
+🎯 SAVETI ZA KORIŠĆENJE
+
+💡 Prvi Put:
+   • Uvek koristite "Test Režim" da vidite šta bi se desilo
+   • Proverite log da verifikujete izbore programa
+   • Napravite backup vaše kolekcije pre konačnog čišćenja
+
+🔄 Geografski Režimi:
+   • Izaberite "Evropa" ako preferirate italijanske/evropske ROM-ove
+   • Koristite "SAD" za uglavnom američke kolekcije
+   • "Japan" za originalne japanske ROM-ove
+
+📊 Tumačenje Loga:
+   • ✨ POJEDINAČAN: Jedinstveni fajlovi koji će biti pomereni u "cleaned" folder
+   • 📦 NAJBOLJI: Najbolji fajlovi iz grupa duplikata koji će biti pomereni u "cleaned"
+   • 🔄 OSTAJE: Duplikovani/lošiji fajlovi koji će ostati u originalnom folderu
+   • ⚠️ MULTI-DISK: Igre koje zahtevaju više diskova
+
+═══════════════════════════════════════════════════════════════════
+
+⚠️ VAŽNA UPOZORENJA
+
+🔐 Bezbednost:
+   • Program nikad ne briše fajlove trajno
+   • Čista kolekcija se pravi u "cleaned" folderu
+   • Originalni fajlovi (uključujući duplikate) ostaju dostupni u glavnom folderu
+   • Uvek možete vratiti bilo koji fajl
+
+💿 Multi-Disk Igre:
+   • Igre kao što su "Final Fantasy VII (Disk 1)" i "Final Fantasy VII (Disk 2)"
+   • Svaki disk se tretira kao zasebna igra
+   • Uverite se da zadržite sve potrebne diskove
+
+🎮 Podržani Formati:
+   • .zip, .7z, .rar (kompresovane arhive)
+   • .iso, .bin, .img (slike diskova)
+   • .rom, .smd, .smc (direktni ROM-ovi)
+   • I mnogi drugi uobičajeni formati
+
+═══════════════════════════════════════════════════════════════════
+
+📞 PODRŠKA
+
+Za probleme ili predloge:
+• Uvek proverite log za detalje operacije
+• Koristite test režim da verifikujete rezultate pre čišćenja
+• Pravite redovne backup-ove vaših kolekcija
+
+Verzija: ROM Cleaner 2.0
+Razvio: FADESoft
+Godina: 2025

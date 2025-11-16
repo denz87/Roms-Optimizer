@@ -1,0 +1,136 @@
+🎮 ROMS OPTIMIZER v0.8.1 - Komplet Vejledning
+
+═══════════════════════════════════════════════════════════════════
+
+📖 OVERSIGT
+ROM Cleaner er et avanceret værktøj til at administrere og rydde op i ROM-samlinger.
+Programmet identificerer automatisk dubletter og beholder kun de bedste versioner
+baseret på intelligente kvalitetskriterier og geografiske prioriteter.
+
+═══════════════════════════════════════════════════════════════════
+
+🔧 HOVEDFUNKTIONER
+
+📂 Mappevalg
+   • Vælg hovedmappen der indeholder ROM'er
+   • Programmet scanner rekursivt alle undermapper
+   • Understøtter alle almindelige ROM-formater
+
+⚙️ Rydningsindstillinger
+   • Test Tilstand: Simulerer rydning uden at ændre filer
+   • Vis Beholdte Filer: Viser også filer der vil blive beholdt
+   • Kopier I Stedet for Flyt: Beholder originale filer og opretter kopier
+
+🌍 Geografisk Prioritet
+   • Europa: Prioriterer italienske, europæiske og PAL-versioner
+   • USA: Prioriterer amerikanske og NTSC-versioner
+   • Japan: Prioriterer japanske og asiatiske versioner
+
+═══════════════════════════════════════════════════════════════════
+
+🏆 PRIORITETSSYSTEM
+
+Programmet bruger et avanceret pointsystem til at bestemme den bedste
+version af hver ROM:
+
+📍 Geografisk Prioritet (basis):
+   • Filer uden geografiske tags: Maksimal prioritet
+   • Italien/Italiensk: 1000 point
+   • Europa/PAL: 900 point
+   • USA/NTSC: 750 point
+   • UK/Engelsk: 700 point
+   • Japan: 500 point
+
+✨ Kvalitetstags:
+   • Ingen tags []: +15000 point (originale filer)
+   • [!] Verificeret God: +9000 point
+   • [f] Rettet: +7000 point
+   • [a] Alternativ: +6000 point
+   • [T] Oversættelse: +3000 point
+   • [h] Hacket: +1000 point
+   • [b] Dårlig Dump: -5000 point
+   • [x] Dårlig Checksum: -10000 point
+
+═══════════════════════════════════════════════════════════════════
+
+📋 RYDNINGSPROCES
+
+1️⃣ Scanning
+   • Programmet analyserer alle ROM-filer i den valgte mappe
+   • Identificerer dubletter baseret på spilnavn
+   • Beregner prioritetscore for hver version
+
+2️⃣ Analyse
+   • Grupperer ROM'er efter spilnavn
+   • Sorterer versioner efter prioritetscore
+   • Identificerer den bedste version for hvert spil
+
+3️⃣ Rydning
+   • Flytter versionen med højeste score til "cleaned" mappe
+   • Flytter også alle enkelte filer (ingen dubletter) til "cleaned" mappe
+   • Efterlader ringere/duplikerede versioner i original mappe
+   • Genererer detaljeret operationslog
+
+═══════════════════════════════════════════════════════════════════
+
+📁 RESULTERENDE FILSTRUKTUR
+
+Efter rydning vil du have:
+📂 Original Mappe
+   ├── 📄 Duplikerede/ringere versioner (bliver her)
+   └── 📁 cleaned/
+       └── 📄 Ren samling: bedste versioner + enkelte filer (flyttet herhen)
+
+═══════════════════════════════════════════════════════════════════
+
+🎯 BRUGSTIPS
+
+💡 Første Gang:
+   • Brug altid "Test Tilstand" for at se hvad der ville ske
+   • Tjek loggen for at verificere programmets valg
+   • Lav en backup af din samling før endelig rydning
+
+🔄 Geografiske Tilstande:
+   • Vælg "Europa" hvis du foretrækker italienske/europæiske ROM'er
+   • Brug "USA" for hovedsagelig amerikanske samlinger
+   • "Japan" for originale japanske ROM'er
+
+📊 Log Fortolkning:
+   • ✨ ENKELT: Unikke filer der vil blive flyttet til "cleaned" mappe
+   • 📦 BEDST: Bedste filer fra dubletgrupper der vil blive flyttet til "cleaned"
+   • 🔄 FORBLIVER: Duplikerede/ringere filer der forbliver i original mappe
+   • ⚠️ MULTI-DISK: Spil der kræver flere diske
+
+═══════════════════════════════════════════════════════════════════
+
+⚠️ VIGTIGE ADVARSLER
+
+🔐 Sikkerhed:
+   • Programmet sletter aldrig filer permanent
+   • Den rene samling oprettes i "cleaned" mappe
+   • Originale filer (inklusive dubletter) forbliver tilgængelige i hovedmappe
+   • Du kan altid gendanne enhver fil
+
+💿 Multi-Disk Spil:
+   • Spil som "Final Fantasy VII (Disk 1)" og "Final Fantasy VII (Disk 2)"
+   • Hver disk behandles som separat spil
+   • Sørg for at beholde alle nødvendige diske
+
+🎮 Understøttede Formater:
+   • .zip, .7z, .rar (komprimerede arkiver)
+   • .iso, .bin, .img (disk-images)
+   • .rom, .smd, .smc (direkte ROM'er)
+   • Og mange andre almindelige formater
+
+═══════════════════════════════════════════════════════════════════
+
+📞 SUPPORT
+
+For problemer eller forslag:
+• Tjek altid loggen for operationsdetaljer
+• Brug test tilstand for at verificere resultater før rydning
+• Lav regelmæssige backups af dine samlinger
+
+Version: ROM Cleaner 2.0
+Udviklet af: FADESoft
+År: 2025

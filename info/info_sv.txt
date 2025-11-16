@@ -1,0 +1,136 @@
+🎮 ROMS OPTIMIZER v0.8.1 - Fullständig Guide
+
+═══════════════════════════════════════════════════════════════════
+
+📖 ÖVERSIKT
+ROM Cleaner är ett avancerat verktyg för att hantera och rensa ROM-samlingar.
+Programmet identifierar automatiskt dubbletter och behåller endast de bästa versionerna
+baserat på intelligenta kvalitetskriterier och geografiska prioriteter.
+
+═══════════════════════════════════════════════════════════════════
+
+🔧 HUVUDFUNKTIONER
+
+📂 Mappval
+   • Välj huvudmappen som innehåller ROM:ar
+   • Programmet skannar rekursivt alla undermappar
+   • Stöder alla vanliga ROM-format
+
+⚙️ Rensningsalternativ
+   • Testläge: Simulerar rensning utan att ändra filer
+   • Visa Behållna Filer: Visar också filer som kommer behållas
+   • Kopiera Istället för Flytta: Behåller originalfiler och skapar kopior
+
+🌍 Geografisk Prioritet
+   • Europa: Prioriterar italienska, europeiska och PAL-versioner
+   • USA: Prioriterar amerikanska och NTSC-versioner
+   • Japan: Prioriterar japanska och asiatiska versioner
+
+═══════════════════════════════════════════════════════════════════
+
+🏆 PRIORITETSSYSTEM
+
+Programmet använder ett avancerat poängsystem för att bestämma den bästa
+versionen av varje ROM:
+
+📍 Geografisk Prioritet (bas):
+   • Filer utan geografiska taggar: Maximal prioritet
+   • Italien/Italienska: 1000 poäng
+   • Europa/PAL: 900 poäng
+   • USA/NTSC: 750 poäng
+   • Storbritannien/Engelska: 700 poäng
+   • Japan: 500 poäng
+
+✨ Kvalitetstaggar:
+   • Inga taggar []: +15000 poäng (originalfiler)
+   • [!] Verifierad Bra: +9000 poäng
+   • [f] Fixad: +7000 poäng
+   • [a] Alternativ: +6000 poäng
+   • [T] Översättning: +3000 poäng
+   • [h] Hackad: +1000 poäng
+   • [b] Dålig Dump: -5000 poäng
+   • [x] Dålig Kontrollsumma: -10000 poäng
+
+═══════════════════════════════════════════════════════════════════
+
+📋 RENSNINGSPROCESS
+
+1️⃣ Skanning
+   • Programmet analyserar alla ROM-filer i den valda mappen
+   • Identifierar dubbletter baserat på spelnamn
+   • Beräknar prioritetspoäng för varje version
+
+2️⃣ Analys
+   • Grupperar ROM:ar efter spelnamn
+   • Sorterar versioner efter prioritetspoäng
+   • Identifierar den bästa versionen för varje spel
+
+3️⃣ Rensning
+   • Flyttar versionen med högst poäng till "cleaned"-mappen
+   • Flyttar också alla unika filer (inga dubbletter) till "cleaned"-mappen
+   • Lämnar sämre/duplicerade versioner i originalmappen
+   • Genererar detaljerad operationslogg
+
+═══════════════════════════════════════════════════════════════════
+
+📁 RESULTERANDE FILSTRUKTUR
+
+Efter rensning kommer du ha:
+📂 Originalmapp
+   ├── 📄 Duplicerade/sämre versioner (stannar här)
+   └── 📁 cleaned/
+       └── 📄 Ren samling: bästa versioner + unika filer (flyttade hit)
+
+═══════════════════════════════════════════════════════════════════
+
+🎯 ANVÄNDNINGSTIPS
+
+💡 Första Gången:
+   • Använd alltid "Testläge" för att se vad som skulle hända
+   • Kontrollera loggen för att verifiera programmets val
+   • Gör en säkerhetskopia av din samling innan slutlig rensning
+
+🔄 Geografiska Lägen:
+   • Välj "Europa" om du föredrar italienska/europeiska ROM:ar
+   • Använd "USA" för huvudsakligen amerikanska samlingar
+   • "Japan" för ursprungliga japanska ROM:ar
+
+📊 Loggtolkning:
+   • ✨ UNIK: Unika filer som kommer flyttas till "cleaned"-mappen
+   • 📦 BÄST: Bästa filer från dubblettgrupper som kommer flyttas till "cleaned"
+   • 🔄 STANNAR: Duplicerade/sämre filer som stannar i originalmappen
+   • ⚠️ MULTI-SKIVA: Spel som kräver flera skivor
+
+═══════════════════════════════════════════════════════════════════
+
+⚠️ VIKTIGA VARNINGAR
+
+🔐 Säkerhet:
+   • Programmet raderar aldrig filer permanent
+   • Den rena samlingen skapas i "cleaned"-mappen
+   • Originalfiler (inklusive dubbletter) förblir tillgängliga i huvudmappen
+   • Du kan alltid återställa vilken fil som helst
+
+💿 Multi-Skiva Spel:
+   • Spel som "Final Fantasy VII (Skiva 1)" och "Final Fantasy VII (Skiva 2)"
+   • Varje skiva behandlas som separat spel
+   • Se till att behålla alla nödvändiga skivor
+
+🎮 Stödda Format:
+   • .zip, .7z, .rar (komprimerade arkiv)
+   • .iso, .bin, .img (skivavbilder)
+   • .rom, .smd, .smc (direkta ROM:ar)
+   • Och många andra vanliga format
+
+═══════════════════════════════════════════════════════════════════
+
+📞 SUPPORT
+
+För problem eller förslag:
+• Kontrollera alltid loggen för operationsdetaljer
+• Använd testläge för att verifiera resultat innan rensning
+• Gör regelbundna säkerhetskopior av dina samlingar
+
+Version: ROM Cleaner 2.0
+Utvecklad av: FADESoft
+År: 2025

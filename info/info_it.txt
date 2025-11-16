@@ -1,0 +1,70 @@
+🎮 ROMS OPTIMIZER v0.8.1 - Guida Completa
+
+🎯 SCOPO
+Ottimizzatore intelligente per collezioni ROM che mantiene solo le versioni migliori utilizzando tag geografici, di qualità e protezione automatica BIOS/Parent Games tramite database DAT MAME integrati.
+
+📋 CARATTERISTICHE PRINCIPALI
+• Protezione automatica BIOS e Parent Games
+• Database DAT MAME integrati (2000-2015 + Advanced 0.106)
+• Supporto completo Neo Geo, CPS, Arcade
+• Scrematura sicura senza compromettere ROM essenziali
+• Interface multilingue (20 lingue)
+• Sistema di priorità geografica personalizzabile
+
+🚀 ISTRUZIONI RAPIDE
+1. Seleziona la cartella contenente le ROM
+2. Scegli la priorità geografica (Europa/USA/Giappone)
+3. Attiva "Modalità Test" per simulazione sicura
+4. Clicca "Scansiona Duplicati" per analizzare
+5. Rivedi i risultati nel log
+6. Clicca "Pulisci ROM" per eseguire l'operazione
+
+⚙️ OPZIONI AVANZATE
+• Modalità Test: Simula senza spostare file realmente
+• Mostra Conservati: Visualizza anche i file che rimangono
+• Modalità Copia: Copia invece di spostare (mantiene originali)
+
+🛡️ SISTEMA PROTEZIONE DAT MAME
+Il programma consulta automaticamente i database MAME per identificare:
+• File BIOS essenziali (mai rimossi)
+• Parent Games (giochi principali)
+• Clone Games (varianti sicure da ottimizzare)
+• Relazioni parent-clone per Neo Geo e Arcade
+
+📊 PRIORITÀ QUALITÀ (dal migliore al peggiore)
+1. File senza tag [] - Originali perfetti (PRIORITÀ MASSIMA)
+2. [!] Verified Good Dump - Versione verificata
+3. [! p] Pending Dump - Migliore disponibile
+4. [f] Fixed - Ottimizzata per emulatore
+5. [a] Alternative - Versione alternativa
+6. [T+] Newer Translation - Traduzione recente
+7. [T] Translation - Traduzione fan
+8. [h] Hacked - Versione modificata
+9. Altri tag - Varie categorie
+10. [b] Bad Dump - Dump corrotto (rimosso)
+
+🌍 PRIORITÀ GEOGRAFICA
+• EUROPA: Italia > Europa > USA > UK > Giappone
+• USA: USA/UK > Europa > Italia > Giappone
+• GIAPPONE: Giappone > USA/UK > Europa > Italia
+
+📁 STRUTTURA OUTPUT
+La cartella "cleaned" conterrà i duplicati rimossi mantenendo:
+• Struttura originale delle cartelle
+• File migliori nella posizione originale
+• Log dettagliato delle operazioni
+
+⚠️ SICUREZZA
+• Nessun file viene mai cancellato definitivamente
+• I duplicati vengono spostati in "cleaned"
+• Protezione automatica per BIOS e Parent Games
+• Modalità test per simulazione sicura
+
+💡 SUGGERIMENTI
+• Usa sempre "Modalità Test" prima dell'operazione reale
+• Verifica i risultati nel log prima di confermare
+• Mantieni backup delle collezioni importanti
+• Il sistema DAT MAME protegge automaticamente i file essenziali
+
+📧 Sviluppato da FADESoft - Novembre 2025
+🌐 Supporto per 20 lingue con interfaccia moderna

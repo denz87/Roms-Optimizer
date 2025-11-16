@@ -1,0 +1,136 @@
+🎮 ROMS OPTIMIZER v0.8.1 - Kattava Opas
+
+═══════════════════════════════════════════════════════════════════
+
+📖 YLEISKATSAUS
+ROM Cleaner on kehittynyt työkalu ROM-kokoelmien hallintaan ja siistimiseen.
+Ohjelma tunnistaa automaattisesti kopiot ja säilyttää vain parhaat versiot
+älykkäiden laatukriteerien ja maantieteellisten prioriteettien perusteella.
+
+═══════════════════════════════════════════════════════════════════
+
+🔧 PÄÄOMINAISUUDET
+
+📂 Kansion Valinta
+   • Valitse päákansio joka sisältää ROM:it
+   • Ohjelma skannaa rekursiivisesti kaikki alikansiot
+   • Tukee kaikkia yleisiä ROM-formaatteja
+
+⚙️ Siivosvaihtoehdot
+   • Testitila: Simuloi siivousta muuttamatta tiedostoja
+   • Näytä Säilytetyt Tiedostot: Näyttää myös tiedostot jotka säilytetään
+   • Kopioi Siirtämisen Sijaan: Säilyttää alkuperäiset tiedostot ja luo kopiot
+
+🌍 Maantieteellinen Prioriteetti
+   • Eurooppa: Priorisoi italialaisia, eurooppalaisia ja PAL-versioita
+   • USA: Priorisoi amerikkalaisia ja NTSC-versioita
+   • Japani: Priorisoi japanilaisia ja aasialaisia versioita
+
+═══════════════════════════════════════════════════════════════════
+
+🏆 PRIORITEETTIJÄRJESTELMÄ
+
+Ohjelma käyttää kehittynyttä pisteytysjärjestelmää määrittääkseen parhaan
+version jokaisesta ROM:ista:
+
+📍 Maantieteellinen Prioriteetti (perusta):
+   • Tiedostot ilman maantieteellisiä tunnuksia: Maksimi prioriteetti
+   • Italia/Italian: 1000 pistettä
+   • Eurooppa/PAL: 900 pistettä
+   • USA/NTSC: 750 pistettä
+   • UK/Englanti: 700 pistettä
+   • Japani: 500 pistettä
+
+✨ Laatutunnisteet:
+   • Ei tunnuksia []: +15000 pistettä (alkuperäiset tiedostot)
+   • [!] Vahvistettu Hyvä: +9000 pistettä
+   • [f] Korjattu: +7000 pistettä
+   • [a] Vaihtoehtoinen: +6000 pistettä
+   • [T] Käännös: +3000 pistettä
+   • [h] Hakkeroitu: +1000 pistettä
+   • [b] Huono Dump: -5000 pistettä
+   • [x] Huono Tarkistussumma: -10000 pistettä
+
+═══════════════════════════════════════════════════════════════════
+
+📋 SIIVOUSPROSESSI
+
+1️⃣ Skannaus
+   • Ohjelma analysoi kaikki ROM-tiedostot valitussa kansiossa
+   • Tunnistaa kopiot pelin nimen perusteella
+   • Laskee prioriteettipistemäärän jokaiselle versiolle
+
+2️⃣ Analyysi
+   • Ryhmittelee ROM:it pelin nimen mukaan
+   • Lajittelee versiot prioriteettipistemäärän mukaan
+   • Tunnistaa parhaan version jokaiselle pelille
+
+3️⃣ Siivous
+   • Siirtää korkeimman pistemäärän version "cleaned" kansioon
+   • Siirtää myös kaikki yksittäiset tiedostot (ei kopioita) "cleaned" kansioon
+   • Jättää huonommat/kopioidut versiot alkuperäiseen kansioon
+   • Luo yksityiskohtaisen toimintalogín
+
+═══════════════════════════════════════════════════════════════════
+
+📁 TULOKSENA OLEVA TIEDOSTORAKENNE
+
+Siivouksen jälkeen sinulla on:
+📂 Alkuperäinen Kansio
+   ├── 📄 Kopioidut/huonommat versiot (jäävät tänne)
+   └── 📁 cleaned/
+       └── 📄 Siisti kokoelma: parhaat versiot + yksittäiset tiedostot (siirretty tänne)
+
+═══════════════════════════════════════════════════════════════════
+
+🎯 KÄYTTÖVINKIT
+
+💡 Ensimmäinen Kerta:
+   • Käytä aina "Testitilaa" nähdäksesi mitä tapahtuisi
+   • Tarkista loki varmistaaksesi ohjelman valinnat
+   • Tee varmuuskopio kokoelmastasi ennen lopullista siivousta
+
+🔄 Maantieteelliset Tilat:
+   • Valitse "Eurooppa" jos suosit italialaisia/eurooppalaisia ROM:eja
+   • Käytä "USA" pääasiassa amerikkalaisille kokoelmille
+   • "Japani" alkuperäisille japanilaisille ROM:eille
+
+📊 Lokin Tulkinta:
+   • ✨ YKSITTÄINEN: Yksittäiset tiedostot jotka siirretään "cleaned" kansioon
+   • 📦 PARAS: Parhaat tiedostot kopioryhmistä jotka siirretään "cleaned":iin
+   • 🔄 JÄÄ: Kopioidut/huonommat tiedostot jotka jäävät alkuperäiseen kansioon
+   • ⚠️ MONILEVYINEN: Pelit jotka vaativat useita levyjä
+
+═══════════════════════════════════════════════════════════════════
+
+⚠️ TÄRKEÄT VAROITUKSET
+
+🔐 Turvallisuus:
+   • Ohjelma ei koskaan poista tiedostoja pysyvästi
+   • Siisti kokoelma luodaan "cleaned" kansioon
+   • Alkuperäiset tiedostot (mukaan lukien kopiot) pysyvät saatavilla pääkansiossa
+   • Voit aina palauttaa minkä tahansa tiedoston
+
+💿 Monilevyiset Pelit:
+   • Pelit kuten "Final Fantasy VII (Levy 1)" ja "Final Fantasy VII (Levy 2)"
+   • Jokainen levy käsitellään erillisenä pelinä
+   • Varmista että säilytät kaikki tarvittavat levyt
+
+🎮 Tuetut Formaatit:
+   • .zip, .7z, .rar (pakatut arkistot)
+   • .iso, .bin, .img (levykuvat)
+   • .rom, .smd, .smc (suorat ROM:it)
+   • Ja monia muita yleisiä formaatteja
+
+═══════════════════════════════════════════════════════════════════
+
+📞 TUKI
+
+Ongelmien tai ehdotusten osalta:
+• Tarkista aina loki toiminnan yksityiskohdista
+• Käytä testitilaa tulosten vahvistamiseen ennen siivousta
+• Tee säännöllisiä varmuuskopioita kokoelmistasi
+
+Versio: ROM Cleaner 2.0
+Kehittäjä: FADESoft
+Vuosi: 2025

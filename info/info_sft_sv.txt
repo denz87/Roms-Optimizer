@@ -1,0 +1,14 @@
+🎮 ROMS OPTIMIZER v0.8.1
+
+💻 Sviluppato da: FADESoft
+📅 Utgivningsdatum: November 2025
+🔧 System: ROM Optimizer
+
+🛡️ Funktioner:
+• Automatiskt BIOS och Parent Games skydd
+• Integreradedatabaser (2000-2015 + Advanced 0.106)
+• Säker rengöring utan ROM skada
+• Komplett Neo Geo, CPS, Arcade stöd
+
+📧 Teknisk support: FADESoft
+🌐 Flerspråkig version

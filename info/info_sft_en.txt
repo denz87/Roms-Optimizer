@@ -1,0 +1,14 @@
+🎮 ROMS OPTIMIZER v0.8.1
+
+💻 Developed by: FADESoft
+📅 Release date: November 2025
+🔧 System: ROMs Optimizer
+
+🛡️ Features:
+• Automatic BIOS and Parent Games protection
+• Integrated MAME databases (2000-2015 + Advanced 0.106)
+• Safe cleaning without compromising ROMs
+• Complete Neo Geo, CPS, Arcade support
+
+📧 Technical support: FADESoft
+🌐 Multilingual version

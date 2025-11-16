@@ -1,0 +1,136 @@
+🎮 ROMS OPTIMIZER v0.8.1 - Kompletna Instrukcja
+
+═══════════════════════════════════════════════════════════════════
+
+📖 PRZEGLĄD
+ROM Cleaner to zaawansowane narzędzie do zarządzania i czyszczenia kolekcji ROM.
+Program automatycznie identyfikuje duplikaty i zachowuje tylko najlepsze wersje
+na podstawie inteligentnych kryteriów jakości i priorytetów geograficznych.
+
+═══════════════════════════════════════════════════════════════════
+
+🔧 GŁÓWNE FUNKCJE
+
+📂 Wybór Folderu
+   • Wybierz główny folder zawierający ROM-y
+   • Program rekursywnie skanuje wszystkie podfoldery
+   • Obsługuje wszystkie popularne formaty ROM
+
+⚙️ Opcje Czyszczenia
+   • Tryb Testowy: Symuluje czyszczenie bez modyfikowania plików
+   • Pokaż Zachowane Pliki: Wyświetla także pliki, które zostaną zachowane
+   • Kopiuj Zamiast Przenosić: Zachowuje oryginalne pliki i tworzy kopie
+
+🌍 Priorytet Geograficzny
+   • Europa: Priorytet dla włoskich, europejskich i PAL wersji
+   • USA: Priorytet dla amerykańskich i NTSC wersji
+   • Japonia: Priorytet dla japońskich i azjatyckich wersji
+
+═══════════════════════════════════════════════════════════════════
+
+🏆 SYSTEM PRIORYTETÓW
+
+Program używa zaawansowanego systemu punktowego do określenia najlepszej
+wersji każdego ROM-a:
+
+📍 Priorytet Geograficzny (podstawa):
+   • Pliki bez tagów geograficznych: Maksymalny priorytet
+   • Włochy/Włoski: 1000 punktów
+   • Europa/PAL: 900 punktów
+   • USA/NTSC: 750 punktów
+   • UK/Angielski: 700 punktów
+   • Japonia: 500 punktów
+
+✨ Tagi Jakości:
+   • Brak tagów []: +15000 punktów (oryginalne pliki)
+   • [!] Zweryfikowany Dobry: +9000 punktów
+   • [f] Naprawiony: +7000 punktów
+   • [a] Alternatywny: +6000 punktów
+   • [T] Tłumaczenie: +3000 punktów
+   • [h] Zhakowany: +1000 punktów
+   • [b] Zły Dump: -5000 punktów
+   • [x] Zła Suma Kontrolna: -10000 punktów
+
+═══════════════════════════════════════════════════════════════════
+
+📋 PROCES CZYSZCZENIA
+
+1️⃣ Skanowanie
+   • Program analizuje wszystkie pliki ROM w wybranym folderze
+   • Identyfikuje duplikaty na podstawie nazwy gry
+   • Oblicza wynik priorytetu dla każdej wersji
+
+2️⃣ Analiza
+   • Grupuje ROM-y według nazwy gry
+   • Sortuje wersje według wyniku priorytetu
+   • Identyfikuje najlepszą wersję dla każdej gry
+
+3️⃣ Czyszczenie
+   • Przenosi wersję z najwyższym wynikiem do folderu "cleaned"
+   • Przenosi także wszystkie pojedyncze pliki (bez duplikatów) do folderu "cleaned"
+   • Zostawia gorsze/duplikowane wersje w oryginalnym folderze
+   • Generuje szczegółowy log operacji
+
+═══════════════════════════════════════════════════════════════════
+
+📁 WYNIKOWA STRUKTURA PLIKÓW
+
+Po czyszczeniu będziesz miał:
+📂 Oryginalny Folder
+   ├── 📄 Duplikowane/gorsze wersje (pozostają tutaj)
+   └── 📁 cleaned/
+       └── 📄 Czysta kolekcja: najlepsze wersje + pojedyncze pliki (przeniesione tutaj)
+
+═══════════════════════════════════════════════════════════════════
+
+🎯 WSKAZÓWKI UŻYTKOWANIA
+
+💡 Pierwszy Raz:
+   • Zawsze używaj "Trybu Testowego" aby zobaczyć co się stanie
+   • Sprawdź log aby zweryfikować wybory programu
+   • Zrób kopię zapasową kolekcji przed ostatecznym czyszczeniem
+
+🔄 Tryby Geograficzne:
+   • Wybierz "Europa" jeśli preferujesz włoskie/europejskie ROM-y
+   • Użyj "USA" dla głównie amerykańskich kolekcji
+   • "Japonia" dla oryginalnych japońskich ROM-ów
+
+📊 Interpretacja Logu:
+   • ✨ POJEDYNCZY: Unikalne pliki, które zostaną przeniesione do folderu "cleaned"
+   • 📦 NAJLEPSZY: Najlepsze pliki z grup duplikatów, które zostaną przeniesione do "cleaned"
+   • 🔄 POZOSTAJE: Duplikowane/gorsze pliki, które pozostaną w oryginalnym folderze
+   • ⚠️ MULTI-DYSK: Gry wymagające wielu dysków
+
+═══════════════════════════════════════════════════════════════════
+
+⚠️ WAŻNE OSTRZEŻENIA
+
+🔐 Bezpieczeństwo:
+   • Program nigdy nie usuwa trwale plików
+   • Czysta kolekcja jest tworzona w folderze "cleaned"
+   • Oryginalne pliki (włącznie z duplikatami) pozostają dostępne w głównym folderze
+   • Zawsze możesz odzyskać każdy plik
+
+💿 Gry Multi-Dysk:
+   • Gry jak "Final Fantasy VII (Dysk 1)" i "Final Fantasy VII (Dysk 2)"
+   • Każdy dysk jest traktowany jako oddzielna gra
+   • Upewnij się, że zachowujesz wszystkie potrzebne dyski
+
+🎮 Obsługiwane Formaty:
+   • .zip, .7z, .rar (skompresowane archiwa)
+   • .iso, .bin, .img (obrazy dysków)
+   • .rom, .smd, .smc (bezpośrednie ROM-y)
+   • I wiele innych popularnych formatów
+
+═══════════════════════════════════════════════════════════════════
+
+📞 WSPARCIE
+
+W przypadku problemów lub sugestii:
+• Zawsze sprawdzaj log aby poznać szczegóły operacji
+• Używaj trybu testowego aby zweryfikować wyniki przed czyszczeniem
+• Rób regularne kopie zapasowe swoich kolekcji
+
+Wersja: ROM Cleaner 2.0
+Opracowane przez: FADESoft
+Rok: 2025

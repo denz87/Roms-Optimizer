@@ -1,0 +1,150 @@
+🎮 ROMS WASHER - INTELLIGENTER ROM CLEANER 🎮
+===============================================
+
+📖 ÜBERBLICK
+ROM Cleaner ist ein fortschrittliches Tool zur Verwaltung und Bereinigung von ROM-Sammlungen
+mit integriertem intelligenten Schutzsystem für MAME und Arcade-Systeme.
+Das Programm identifiziert automatisch Duplikate während ALLE wesentlichen Dateien erhalten bleiben.
+
+🎯 HAUPTFUNKTIONEN:
+• BIOS und Parent Games Schutzsystem
+• Automatisches MAME XML DAT Dateien Parsing
+• Neo Geo, CPS, Arcade Abhängigkeiten Erkennung
+• Sichere Filterung ohne ROM-Kompromittierung
+• Intelligente geografische Prioritäten (Europa > USA > Japan)
+• Dateiqualität Verwaltung (Original > Hack > Übersetzung)
+
+🎮 INTEGRIERTE MAME DAT DATENBANKEN:
+• MAME 2000 (0.37b5) - 2270+ Spiele
+• MAME 2003 (0.78) - 4720+ Spiele
+• MAME 2010 (0.139) - 8100+ Spiele
+• MAME 2015 (0.160) - 17900+ Spiele
+• MAME Advanced (0.106) - Spezialisierter Satz
+
+═══════════════════════════════════════════════════════════════════
+
+🔧 HAUPTFUNKTIONEN
+
+📂 Ordnerauswahl
+   • Wählen Sie den Hauptordner mit den ROMs aus
+   • Das Programm durchsucht rekursiv alle Unterordner
+   • Unterstützt alle gängigen ROM-Formate
+
+⚙️ Bereinigungsoptionen
+   • Testmodus: Simuliert die Bereinigung ohne Dateien zu ändern
+   • Behaltene Dateien anzeigen: Zeigt auch Dateien an, die behalten werden
+   • Kopieren statt Verschieben: Behält Originaldateien und erstellt Kopien
+
+🌍 Geografische Priorität
+   • Europa: Bevorzugt italienische, europäische und PAL-Versionen
+   • USA: Bevorzugt amerikanische und NTSC-Versionen
+   • Japan: Bevorzugt japanische und asiatische Versionen
+
+═══════════════════════════════════════════════════════════════════
+
+🏆 PRIORITÄTSSYSTEM
+
+Das Programm verwendet ein fortschrittliches Bewertungssystem, um die beste
+Version jeder ROM zu bestimmen:
+
+📍 Geografische Priorität (Basis):
+   • Dateien ohne geografische Tags: Maximale Priorität
+   • Italien/Italienisch: 1000 Punkte
+   • Europa/PAL: 900 Punkte
+   • USA/NTSC: 750 Punkte
+   • UK/Englisch: 700 Punkte
+   • Japan: 500 Punkte
+
+✨ Qualitäts-Tags:
+   • Keine Tags []: +15000 Punkte (Originaldateien)
+   • [!] Verified Good: +9000 Punkte
+   • [f] Fixed: +7000 Punkte
+   • [a] Alternative: +6000 Punkte
+   • [T] Translation: +3000 Punkte
+   • [h] Hacked: +1000 Punkte
+   • [b] Bad Dump: -5000 Punkte
+   • [x] Bad Checksum: -10000 Punkte
+
+═══════════════════════════════════════════════════════════════════
+
+📋 BEREINIGUNGSPROZESS
+
+1️⃣ Scannen
+   • Das Programm analysiert alle ROM-Dateien im ausgewählten Ordner
+   • Identifiziert Duplikate basierend auf dem Spielnamen
+   • Berechnet Prioritätswert für jede Version
+
+2️⃣ Analyse
+   • Gruppiert ROMs nach Spielnamen
+   • Sortiert Versionen nach Prioritätswert
+   • Identifiziert die beste Version für jedes Spiel
+
+3️⃣ Bereinigung
+   • Verschiebt die Version mit dem höchsten Wert in den "cleaned"-Ordner
+   • Verschiebt auch alle einzelnen Dateien (keine Duplikate) in den "cleaned"-Ordner
+   • Lässt minderwertige/doppelte Versionen im Originalordner
+   • Generiert detailliertes Operationsprotokoll
+
+═══════════════════════════════════════════════════════════════════
+
+📁 RESULTIERENDE DATEISTRUKTUR
+
+Nach der Bereinigung haben Sie:
+📂 Originalordner
+   ├── 📄 Doppelte/minderwertige Versionen (bleiben hier)
+   └── 📁 cleaned/
+       └── 📄 Saubere Sammlung: beste Versionen + einzelne Dateien (hierhin verschoben)
+
+═══════════════════════════════════════════════════════════════════
+
+🎯 VERWENDUNGSTIPPS
+
+💡 Erstmalige Verwendung:
+   • Verwenden Sie immer den "Testmodus" um zu sehen was passieren würde
+   • Überprüfen Sie das Protokoll um Programmwahlen zu verifizieren
+   • Erstellen Sie ein Backup Ihrer Sammlung vor der finalen Bereinigung
+
+🔄 Geografische Modi:
+   • Wählen Sie "Europa" wenn Sie italienische/europäische ROMs bevorzugen
+   • Verwenden Sie "USA" für hauptsächlich amerikanische Sammlungen
+   • "Japan" für originale japanische ROMs
+
+📊 Protokoll-Interpretation:
+   • ✨ EINZELN: Einzigartige Dateien die in den "cleaned"-Ordner verschoben werden
+   • � BESTE: Beste Dateien aus Duplikatgruppen die nach "cleaned" verschoben werden
+   • 📁 BLEIBEN: Doppelte/minderwertige Dateien die im Originalordner bleiben
+   • ⚠️ MULTI-DISC: Spiele die mehrere Discs benötigen
+
+═══════════════════════════════════════════════════════════════════
+
+⚠️ WICHTIGE WARNUNGEN
+
+🔐 Sicherheit:
+   • Das Programm löscht niemals permanent Dateien
+   • Die saubere Sammlung wird im "cleaned"-Ordner erstellt
+   • Originaldateien (einschließlich Duplikate) bleiben im Hauptordner zugänglich
+   • Sie können jederzeit jede Datei wiederherstellen
+
+💿 Multi-Disc-Spiele:
+   • Spiele wie "Final Fantasy VII (Disk 1)" und "Final Fantasy VII (Disk 2)"
+   • Jede Disc wird als separates Spiel behandelt
+   • Stellen Sie sicher, alle notwendigen Discs zu behalten
+
+🎮 Unterstützte Formate:
+   • .zip, .7z, .rar (komprimierte Archive)
+   • .iso, .bin, .img (Disc-Images)
+   • .rom, .smd, .smc (direkte ROMs)
+   • Und viele andere gängige Formate
+
+═══════════════════════════════════════════════════════════════════
+
+📞 SUPPORT
+
+Für Probleme oder Vorschläge:
+• Überprüfen Sie immer das Protokoll für Operationsdetails
+• Verwenden Sie den Testmodus um Ergebnisse vor der Bereinigung zu überprüfen
+• Erstellen Sie regelmäßige Backups Ihrer Sammlungen
+
+Version: ROM Cleaner 2.0
+Entwickelt von: FADESoft
+Jahr: 2025
